@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Splash.unity
     guid: 1940bc3b7c233734f8ef2f658357886d
   - enabled: 1
-    path: Assets/Scenes/test.unity
-    guid: 57fe6b9e50c7fff40882d7e907161993
+    path: Assets/Scenes/BuildYourBot.unity
+    guid: 9fa341120475eab4ea8b5c9464e802b5
   m_configObjects: {}

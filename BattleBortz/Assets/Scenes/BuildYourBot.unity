@@ -251,7 +251,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Choosing...
+  m_Text: Ready!
 --- !u!222 &367086206
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -550,17 +550,17 @@ PrefabInstance:
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 227.30002
+      value: 339.0001
       objectReference: {fileID: 0}
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50.499985
+      value: -50.5
       objectReference: {fileID: 0}
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -454.6
+      value: -678
       objectReference: {fileID: 0}
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
@@ -907,17 +907,17 @@ PrefabInstance:
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -227.3
+      value: -339
       objectReference: {fileID: 0}
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50.499985
+      value: -50.5
       objectReference: {fileID: 0}
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -454.6
+      value: -678
       objectReference: {fileID: 0}
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
