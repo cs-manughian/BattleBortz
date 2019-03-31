@@ -31,9 +31,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4760957374019223780}
-  - {fileID: 4528823620155865583}
-  - {fileID: 7153664289949174393}
-  - {fileID: 3345167242543306906}
+  - {fileID: 4580477250975927253}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -91,6 +89,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9148548ba0466284eb823957ad25dd07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1740827665991975896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118317984265694125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 5581805990478738730}
+  toggleTransition: 1
+  graphic: {fileID: 0}
+  m_Group: {fileID: 226674265686923979}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_IsOn: 0
+--- !u!1 &2180144151099837157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4580477250975927253}
+  - component: {fileID: 226674265686923979}
+  m_Layer: 5
+  m_Name: WeaponToggleController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4580477250975927253
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2180144151099837157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4528823620155865583}
+  - {fileID: 7153664289949174393}
+  - {fileID: 3345167242543306906}
+  m_Father: {fileID: 7021551620852558224}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &226674265686923979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2180144151099837157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 1
 --- !u!1 &2568607421209061177
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +199,7 @@ GameObject:
   - component: {fileID: 4804765393420329768}
   - component: {fileID: 8621684148565125245}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PlayerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -170,17 +266,109 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Player 1
+--- !u!114 &703815795183450567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4682248452080588859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1218778037323646652}
+  toggleTransition: 1
+  graphic: {fileID: 0}
+  m_Group: {fileID: 226674265686923979}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_IsOn: 0
+--- !u!114 &6652986682344283055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5786921959446690126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 25912047344658377}
+  toggleTransition: 1
+  graphic: {fileID: 0}
+  m_Group: {fileID: 226674265686923979}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_IsOn: 0
 --- !u!1001 &2660165235238733046
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 7021551620852558224}
+    m_TransformParent: {fileID: 4580477250975927253}
     m_Modifications:
     - target: {fileID: 4147543489787588443, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_Name
-      value: WeaponButton (1)
+      value: GunToggle
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -200,17 +388,17 @@ PrefabInstance:
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -220,7 +408,7 @@ PrefabInstance:
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -302,25 +490,44 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 95295624bce36084e90beb354654d2ba, type: 3}
+--- !u!1 &2118317984265694125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4147543489787588443, guid: 95295624bce36084e90beb354654d2ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660165235238733046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7153664289949174393 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
     type: 3}
   m_PrefabInstance: {fileID: 2660165235238733046}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5581805990478738730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7610028760122683868, guid: 95295624bce36084e90beb354654d2ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660165235238733046}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118317984265694125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7620176369418229269
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 7021551620852558224}
+    m_TransformParent: {fileID: 4580477250975927253}
     m_Modifications:
     - target: {fileID: 4147543489787588443, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_Name
-      value: WeaponButton (2)
+      value: TeddyToggle
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -340,17 +547,17 @@ PrefabInstance:
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -360,7 +567,7 @@ PrefabInstance:
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -442,25 +649,44 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 95295624bce36084e90beb354654d2ba, type: 3}
+--- !u!1 &5786921959446690126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4147543489787588443, guid: 95295624bce36084e90beb354654d2ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 7620176369418229269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3345167242543306906 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
     type: 3}
   m_PrefabInstance: {fileID: 7620176369418229269}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &25912047344658377 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7610028760122683868, guid: 95295624bce36084e90beb354654d2ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 7620176369418229269}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5786921959446690126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8752104845871626080
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 7021551620852558224}
+    m_TransformParent: {fileID: 4580477250975927253}
     m_Modifications:
     - target: {fileID: 4147543489787588443, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_Name
-      value: WeaponButton
+      value: SawToggle
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -480,17 +706,17 @@ PrefabInstance:
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -500,7 +726,7 @@ PrefabInstance:
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -569,9 +795,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95295624bce36084e90beb354654d2ba, type: 3}
+--- !u!1 &4682248452080588859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4147543489787588443, guid: 95295624bce36084e90beb354654d2ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 8752104845871626080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4528823620155865583 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
     type: 3}
   m_PrefabInstance: {fileID: 8752104845871626080}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1218778037323646652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7610028760122683868, guid: 95295624bce36084e90beb354654d2ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 8752104845871626080}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4682248452080588859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

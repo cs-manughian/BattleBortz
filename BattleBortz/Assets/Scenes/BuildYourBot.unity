@@ -1058,6 +1058,11 @@ PrefabInstance:
       propertyPath: _player
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2180144151099837157, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_Name
+      value: WeaponToggleController
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afc777a607bf97b4ab7d2b3707d35d35, type: 3}
 --- !u!224 &7021551620852558224 stripped

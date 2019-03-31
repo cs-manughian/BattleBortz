@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using GameUtils;
 
-public class WeaponButton : MonoBehaviour
+public class WeaponToggleActivator : MonoBehaviour
 {
     public WeaponType _weaponType;
     public int _player;
@@ -9,9 +10,30 @@ public class WeaponButton : MonoBehaviour
     [SerializeField] GameObject _gunObject;
     [SerializeField] GameObject _teddyObject;
 
+    private Toggle _toggle;
+    private Color _baseColor;
+    private Color _selectedColor;
+
     // Start is called before the first frame update
     void Start()
     {
+        _toggle = GetComponent<Toggle>();
+        _toggle.onValueChanged.AddListener((value) => OnToggleValueChanged(value));
+
+        _baseColor = _toggle.colors.normalColor;
+        _selectedColor = _toggle.colors.highlightedColor;
+    }
+
+    void OnToggleValueChanged(bool value)
+    {
+        if (value)
+        {
+            GetComponent<Image>().color = _selectedColor;
+        }
+        else
+        {
+            GetComponent<Image>().color = _baseColor;
+        }
     }
 
     // Update is called once per frame

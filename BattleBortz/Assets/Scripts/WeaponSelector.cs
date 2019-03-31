@@ -12,24 +12,25 @@ public class WeaponSelector : MonoBehaviour
         customizer = GameObject.Find("BotCustomizer").GetComponent<BotCustomizer>();
 
         // Get all buttons
-        Button[] buttons = GetComponentsInChildren<Button>();
-        foreach (Button button in buttons)
+        Toggle[] toggles = GetComponentsInChildren<Toggle>();
+        foreach (Toggle toggle in toggles)
         {
-            // Apply SelectWeapon as the on click event
-            button.onClick.AddListener(() => SelectWeapon(button));
+            // Apply SelectWeapon as the onValueChanged event
+            toggle.onValueChanged.AddListener((value) => SelectWeapon(toggle, value));
         }
     }
 
     // On Click for Weapon Button Object
-    void SelectWeapon(Button button)
+    void SelectWeapon(Toggle toggle, bool value)
     {
+        if (!value) return;
         // TODO:
         // This is actually the script. We need to rename the script on refactor
-        WeaponButton weaponBtn = button.GetComponent<WeaponButton>(); 
+        WeaponToggleActivator weaponActivator = toggle.GetComponent<WeaponToggleActivator>(); 
 
         WeaponSelection selection;
-        selection.weaponType = weaponBtn._weaponType;
-        selection.player = weaponBtn._player;
+        selection.weaponType = weaponActivator._weaponType;
+        selection.player = weaponActivator._player;
 
         customizer.OnWeaponSelected(selection);
     }
