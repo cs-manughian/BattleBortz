@@ -490,6 +490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813890981}
   - component: {fileID: 1813890982}
+  - component: {fileID: 1813890983}
   m_Layer: 0
   m_Name: BotCustomizer
   m_TagString: Untagged
@@ -521,6 +522,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8f3930bb920b7949a45d201408ef4b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1813890983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813890980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36686081dc1d4e4d89ea1797f39c082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1850111548
