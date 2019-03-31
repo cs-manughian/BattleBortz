@@ -8,8 +8,6 @@ public class BotCustomizer : MonoBehaviour
 
     public void OnWeaponSelected(WeaponSelection selection)
     {
-        Debug.Log(selection.player);
-        Debug.Log(selection.weaponType);
         if (selection.player == 1)
         {
             playerOneSelection = selection.weaponType;

@@ -24,8 +24,7 @@ public class WeaponSelector : MonoBehaviour
     void SelectWeapon(Toggle toggle, bool value)
     {
         if (!value) return;
-        // TODO:
-        // This is actually the script. We need to rename the script on refactor
+
         WeaponToggleActivator weaponActivator = toggle.GetComponent<WeaponToggleActivator>(); 
 
         WeaponSelection selection;
