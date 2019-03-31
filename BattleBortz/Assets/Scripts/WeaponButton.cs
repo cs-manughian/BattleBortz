@@ -1,20 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using GameUtils;
 
 public class WeaponButton : MonoBehaviour
 {
-    public enum WeaponType
-    {
-        SAW,
-        GUN,
-        TEDDY_BEAR
-    };
-
     public WeaponType _weaponType;
-    public GameObject _sawObject;
-    public GameObject _gunObject;
-    public GameObject _teddyObject;
+    public int _player;
+    [SerializeField] GameObject _sawObject;
+    [SerializeField] GameObject _gunObject;
+    [SerializeField] GameObject _teddyObject;
 
     // Start is called before the first frame update
     void Start()
