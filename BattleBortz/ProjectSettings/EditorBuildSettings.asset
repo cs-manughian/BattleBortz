@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BuildYourBot.unity
     guid: 9fa341120475eab4ea8b5c9464e802b5
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 8273f9a3adefa2340829c1421bea7295
   m_configObjects: {}
