@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 924177576}
   - component: {fileID: 924177575}
   - component: {fileID: 924177574}
+  - component: {fileID: 924177577}
   m_Layer: 5
   m_Name: ReadyButton
   m_TagString: Untagged
@@ -377,7 +378,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 924177575}
   m_OnClick:
     m_PersistentCalls:
@@ -432,6 +433,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924177572}
   m_CullTransparentMesh: 0
+--- !u!114 &924177577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924177572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21914ad551725cc40b9874415e1e5296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &970964201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1245,40 +1258,40 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5257662902542341397, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: player
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257662902542341397, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: _player
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542920885282907779, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: player
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542920885282907779, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: _player
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422345139223611382, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: player
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422345139223611382, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: _player
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1332623544671761787, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257662902542341397, guid: afc777a607bf97b4ab7d2b3707d35d35,
-        type: 3}
-      propertyPath: player
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257662902542341397, guid: afc777a607bf97b4ab7d2b3707d35d35,
-        type: 3}
-      propertyPath: _player
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542920885282907779, guid: afc777a607bf97b4ab7d2b3707d35d35,
-        type: 3}
-      propertyPath: player
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542920885282907779, guid: afc777a607bf97b4ab7d2b3707d35d35,
-        type: 3}
-      propertyPath: _player
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 422345139223611382, guid: afc777a607bf97b4ab7d2b3707d35d35,
-        type: 3}
-      propertyPath: player
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 422345139223611382, guid: afc777a607bf97b4ab7d2b3707d35d35,
-        type: 3}
-      propertyPath: _player
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2180144151099837157, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
