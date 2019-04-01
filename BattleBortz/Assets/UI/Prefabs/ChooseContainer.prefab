@@ -483,7 +483,7 @@ PrefabInstance:
     - target: {fileID: 7790161526013727203, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: _weaponType
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4977457621039781163, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -642,7 +642,7 @@ PrefabInstance:
     - target: {fileID: 7790161526013727203, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: _weaponType
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9014818068622380174, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -792,6 +792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790161526013727203, guid: 95295624bce36084e90beb354654d2ba,
+        type: 3}
+      propertyPath: _weaponType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95295624bce36084e90beb354654d2ba, type: 3}
