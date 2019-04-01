@@ -5,11 +5,11 @@ using GameUtils;
 // This goes on choose container
 public class WeaponSelector : MonoBehaviour
 {
-    BotCustomizer customizer;
+    BotCustomizer _customizer;
 
     void Start()
     {
-        customizer = GameObject.Find("BotCustomizer").GetComponent<BotCustomizer>();
+        _customizer = GameObject.Find("BotCustomizer").GetComponent<BotCustomizer>();
 
         // Get all buttons
         Toggle[] toggles = GetComponentsInChildren<Toggle>();
@@ -24,13 +24,14 @@ public class WeaponSelector : MonoBehaviour
     void SelectWeapon(Toggle toggle, bool value)
     {
         if (!value) return;
-
+        // TODO:
+        // This is actually the script. We need to rename the script on refactor
         WeaponToggleActivator weaponActivator = toggle.GetComponent<WeaponToggleActivator>(); 
 
         WeaponSelection selection;
         selection.weaponType = weaponActivator._weaponType;
         selection.player = weaponActivator._player;
 
-        customizer.OnWeaponSelected(selection);
+        _customizer.OnWeaponSelected(selection);
     }
 }

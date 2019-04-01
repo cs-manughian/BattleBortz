@@ -3,6 +3,7 @@ namespace GameUtils
 {
     public enum WeaponType
     {
+        NONE,
         SAW,
         GUN,
         TEDDY_BEAR
