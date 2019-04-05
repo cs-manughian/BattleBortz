@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7238073283764672981}
   - component: {fileID: 4549616768705585275}
   - component: {fileID: 6608519208568388187}
+  - component: {fileID: 4870757021699228923}
   m_Layer: 0
   m_Name: BotBaseWheels
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410517813088291474}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 8.159727, y: 3.1002002, z: 14.656507}
   m_Children:
@@ -37,7 +38,7 @@ Transform:
   - {fileID: 3515815774323197415}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2187367241397610025
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -108,8 +109,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2fb8aa8411fbf40b908c7e50c51535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
-  rotationSpeed: 150
+  speed: 10000
+  rotationSpeed: 500
+  player: 0
+--- !u!54 &4870757021699228923
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410517813088291474}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1.05
+  m_AngularDrag: 0.075
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 80
+  m_CollisionDetection: 1
 --- !u!1 &2080618767548916688
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,9 +216,9 @@ MeshCollider:
   m_GameObject: {fileID: 2080618767548916688}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 517c9403b0ebd234a8117cbab206f5cd, type: 3}
 --- !u!95 &578927938908785898
@@ -310,9 +328,9 @@ MeshCollider:
   m_GameObject: {fileID: 2391642177171198381}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 517c9403b0ebd234a8117cbab206f5cd, type: 3}
 --- !u!95 &8581357998177183756
@@ -422,9 +440,9 @@ MeshCollider:
   m_GameObject: {fileID: 3995123395791216109}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 517c9403b0ebd234a8117cbab206f5cd, type: 3}
 --- !u!95 &3496125649294716360
@@ -534,9 +552,9 @@ MeshCollider:
   m_GameObject: {fileID: 7334021404676998483}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 517c9403b0ebd234a8117cbab206f5cd, type: 3}
 --- !u!95 &6976013312400841656
