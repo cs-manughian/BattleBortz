@@ -111,6 +111,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18753994, y: 0.5519514, z: 0.5519514}
   m_Center: {x: -0.06531751, y: 0.000000044703484, z: 0.000000044703484}
+--- !u!1 &1193368378667722411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5269982104079548347}
+  m_Layer: 0
+  m_Name: WeaponBone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5269982104079548347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193368378667722411}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 2.2, z: -2.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8224212244515223955}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2090500725422377523
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +500,7 @@ GameObject:
   - component: {fileID: 4082779216666198090}
   - component: {fileID: 3464877177389614597}
   - component: {fileID: 2591155898222325622}
+  - component: {fileID: 5939488061417907067}
   m_Layer: 0
   m_Name: Bot
   m_TagString: Untagged
@@ -490,6 +521,7 @@ Transform:
   m_Children:
   - {fileID: 1915256304725029364}
   - {fileID: 2071148003838834982}
+  - {fileID: 5269982104079548347}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -535,6 +567,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 12000
   rotationSpeed: 500
+--- !u!114 &5939488061417907067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578913195671366898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0644e69f95535bc41963636d9cad736c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sawObject: {fileID: 4603101318235624880, guid: e37defdd135e2494484e933085f7cc61,
+    type: 3}
+  _gunObject: {fileID: 6114601373137676796, guid: dfe6fc837f0b0ce448360a114088d80a,
+    type: 3}
+  _teddyObject: {fileID: 5588865620163309361, guid: 88c747e85f6c8a44aac1436966a46433,
+    type: 3}
+  _weaponBone: {fileID: 1193368378667722411}
 --- !u!1 &5743454323675878029
 GameObject:
   m_ObjectHideFlags: 0

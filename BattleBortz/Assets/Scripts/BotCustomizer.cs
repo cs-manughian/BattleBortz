@@ -6,6 +6,9 @@ public class BotCustomizer : MonoBehaviour
     WeaponType _playerOneSelection = WeaponType.NONE;
     WeaponType _playerTwoSelection = WeaponType.NONE;
 
+    public WeaponType PlayerOneSelection { get { return _playerOneSelection; } }
+    public WeaponType PlayerTwoSelection { get { return _playerTwoSelection; } }
+
     public void OnWeaponSelected(WeaponSelection selection)
     {
         if (selection.player == 1)
