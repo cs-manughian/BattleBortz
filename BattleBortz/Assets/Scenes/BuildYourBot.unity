@@ -889,6 +889,31 @@ PrefabInstance:
       propertyPath: _player
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 785757331037529390, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896689260879037531, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5173811364147689421, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145734500237866835, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212494202403996869, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 1332623544671761787, guid: afc777a607bf97b4ab7d2b3707d35d35, type: 3}
@@ -950,7 +975,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1278,6 +1303,11 @@ PrefabInstance:
       propertyPath: _player
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1542920885282907779, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: _sawObject
+      value: 
+      objectReference: {fileID: 4891838047597559682}
     - target: {fileID: 422345139223611382, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: player
@@ -1298,9 +1328,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: WeaponToggleController
       objectReference: {fileID: 0}
+    - target: {fileID: 785757331037529390, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5173811364147689421, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145734500237866835, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212494202403996869, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1332623544671761787, guid: afc777a607bf97b4ab7d2b3707d35d35, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: afc777a607bf97b4ab7d2b3707d35d35, type: 3}
+--- !u!1 &4891838047597559682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1896689260879037531, guid: afc777a607bf97b4ab7d2b3707d35d35,
+    type: 3}
+  m_PrefabInstance: {fileID: 4891838047597559681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7021551620852558224 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,

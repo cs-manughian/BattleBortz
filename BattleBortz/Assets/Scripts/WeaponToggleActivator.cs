@@ -13,6 +13,7 @@ public class WeaponToggleActivator : MonoBehaviour
     private Toggle _toggle;
     private Color _baseColor;
     private Color _selectedColor;
+    private GameObject _weaponObject;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,14 @@ public class WeaponToggleActivator : MonoBehaviour
 
         _baseColor = _toggle.colors.normalColor;
         _selectedColor = _toggle.colors.highlightedColor;
+
+        SetToggleWeaponObject();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        RotateWeapon();
     }
 
     void OnToggleValueChanged(bool value)
@@ -36,32 +45,24 @@ public class WeaponToggleActivator : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void SetToggleWeaponObject()
     {
         if (_weaponType == WeaponType.SAW)
         {
-            _sawObject.SetActive(true);
-            _gunObject.SetActive(false);
-            _teddyObject.SetActive(false);
-
-            _sawObject.transform.Rotate(new Vector3(0f, 0.5f, 0.1f));
+            _weaponObject = _sawObject;
         }
         else if (_weaponType == WeaponType.GUN)
         {
-            _sawObject.SetActive(false);
-            _gunObject.SetActive(true);
-            _teddyObject.SetActive(false);
-            
-            _gunObject.transform.Rotate(new Vector3(0f, 0.5f, 0.1f));
+            _weaponObject = _gunObject;
         }
         else
         {
-            _sawObject.SetActive(false);
-            _gunObject.SetActive(false);
-            _teddyObject.SetActive(true);
-            
-            _teddyObject.transform.Rotate(new Vector3(0f, 0.5f, 0.1f));
+            _weaponObject = _teddyObject;
         }
+    }
+
+    void RotateWeapon()
+    {
+        _weaponObject.transform.Rotate(new Vector3(0f, 0.25f, 0.05f));
     }
 }
