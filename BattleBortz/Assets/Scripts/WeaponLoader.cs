@@ -14,12 +14,27 @@ public class WeaponLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _customizer = GameObject.Find("BotCustomizer").GetComponent<BotCustomizer>();
+        SetBotCustomization();
+
         WeaponType weaponType = gameObject.tag == "Player1" 
                               ? _customizer.PlayerOneSelection 
                               : _customizer.PlayerTwoSelection;
 
         MountWeapon(weaponType);
+    }
+
+    void SetBotCustomization()
+    {
+        GameObject gameObject = GameObject.Find("BotCustomizer");
+        if (gameObject == null)
+        {
+            // This is for when the game scene is ran directly
+            _customizer = new GameObject().AddComponent<BotCustomizer>();
+        }
+        else
+        {
+            _customizer = gameObject.GetComponent<BotCustomizer>();
+        }
     }
 
     void MountWeapon(WeaponType weaponType)
@@ -36,6 +51,7 @@ public class WeaponLoader : MonoBehaviour
                 PositionWeapon(_teddyObject);
                 break;
             default:
+                PositionWeapon(_teddyObject);
                 break;
         }
     }
