@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8588999818264748595}
   - component: {fileID: 8588999818266075667}
   - component: {fileID: 8588999818267173075}
+  - component: {fileID: 1096678719570866462}
+  - component: {fileID: 1581378978572868455}
   m_Layer: 0
   m_Name: Saw
   m_TagString: Untagged
@@ -77,3 +79,27 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1096678719570866462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8588999818265181715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e128670993e4884eaab5b51a23f5bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1581378978572868455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8588999818265181715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135e8432b1041064ab3c23b3131f93ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

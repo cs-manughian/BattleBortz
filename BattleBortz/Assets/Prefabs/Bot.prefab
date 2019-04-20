@@ -579,11 +579,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0644e69f95535bc41963636d9cad736c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sawObject: {fileID: 4603101318235624880, guid: e37defdd135e2494484e933085f7cc61,
+  _sawObject: {fileID: 8588999818265181715, guid: 951d87a29cd938f4b839a5f51af5ff3c,
     type: 3}
-  _gunObject: {fileID: 6114601373137676796, guid: dfe6fc837f0b0ce448360a114088d80a,
-    type: 3}
-  _teddyObject: {fileID: 5588865620163309361, guid: 88c747e85f6c8a44aac1436966a46433,
+  _gunObject: {fileID: 100000, guid: e118413331497e94789f3ca78b83c02b, type: 3}
+  _teddyObject: {fileID: 1258646480729192, guid: c3eb64e478b2bb748ae1501daf818368,
     type: 3}
   _weaponBone: {fileID: 1193368378667722411}
 --- !u!1 &5743454323675878029
