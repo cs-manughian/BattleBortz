@@ -4,6 +4,6 @@ public class SpinnableWeapon : MonoBehaviour, IWeaponBehavior
 {
     public void Fire()
     {
-        Debug.Log("Firing");
+        transform.Rotate(new Vector3(0f, 0f, 10f));
     }
 }

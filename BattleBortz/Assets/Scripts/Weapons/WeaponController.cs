@@ -26,6 +26,4 @@ public class WeaponController : MonoBehaviour
             _weaponBehavior.Fire();
         }
     }
-
-
 }
