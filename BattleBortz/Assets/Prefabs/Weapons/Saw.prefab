@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 91b40715d8134e44f96644fc316cf9a7, type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 91b40715d8134e44f96644fc316cf9a7, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
@@ -401,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 91b40715d8134e44f96644fc316cf9a7, type: 3}
       propertyPath: ShapeModule.length
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 91b40715d8134e44f96644fc316cf9a7, type: 3}
       propertyPath: SizeModule.z.maxCurve.m_Curve.Array.data[0].value
