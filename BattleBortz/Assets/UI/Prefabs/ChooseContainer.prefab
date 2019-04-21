@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.8927181, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -253,9 +253,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: 628d77f52aa8b3b4ea77a8bd570a08f0, type: 3}
+    m_FontSize: 36
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40
@@ -370,6 +370,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GunToggle
       objectReference: {fileID: 0}
+    - target: {fileID: 7790161526013727203, guid: 95295624bce36084e90beb354654d2ba,
+        type: 3}
+      propertyPath: _weaponType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145885428853546539, guid: 95295624bce36084e90beb354654d2ba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977457621039781163, guid: 95295624bce36084e90beb354654d2ba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -475,21 +490,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6145885428853546539, guid: 95295624bce36084e90beb354654d2ba,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7790161526013727203, guid: 95295624bce36084e90beb354654d2ba,
-        type: 3}
-      propertyPath: _weaponType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977457621039781163, guid: 95295624bce36084e90beb354654d2ba,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 95295624bce36084e90beb354654d2ba, type: 3}
@@ -528,6 +528,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeddyToggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790161526013727203, guid: 95295624bce36084e90beb354654d2ba,
+        type: 3}
+      propertyPath: _weaponType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145885428853546539, guid: 95295624bce36084e90beb354654d2ba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014818068622380174, guid: 95295624bce36084e90beb354654d2ba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -634,21 +649,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6145885428853546539, guid: 95295624bce36084e90beb354654d2ba,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7790161526013727203, guid: 95295624bce36084e90beb354654d2ba,
-        type: 3}
-      propertyPath: _weaponType
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9014818068622380174, guid: 95295624bce36084e90beb354654d2ba,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 95295624bce36084e90beb354654d2ba, type: 3}
@@ -687,6 +687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SawToggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790161526013727203, guid: 95295624bce36084e90beb354654d2ba,
+        type: 3}
+      propertyPath: _weaponType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164544563648319119, guid: 95295624bce36084e90beb354654d2ba,
         type: 3}
@@ -792,11 +797,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7790161526013727203, guid: 95295624bce36084e90beb354654d2ba,
-        type: 3}
-      propertyPath: _weaponType
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95295624bce36084e90beb354654d2ba, type: 3}
