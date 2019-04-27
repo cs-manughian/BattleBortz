@@ -2,8 +2,16 @@
 
 public class SpinnableWeapon : MonoBehaviour, IWeaponBehavior
 {
+    [SerializeField] ParticleSystem sparks;
+
     public void Fire()
     {
-        transform.Rotate(new Vector3(0f, 0f, 10f));
+        float spinSpeed = 50f;
+        transform.Rotate(new Vector3(0f, 0f, spinSpeed));
+    }
+
+    public void PlayHitFx()
+    {
+        sparks.Play();
     }
 }

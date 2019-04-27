@@ -3,22 +3,35 @@
 public class WeaponController : MonoBehaviour
 {
     IWeaponBehavior _weaponBehavior;
+    bool isPlayerFiring;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _weaponBehavior = GetComponent<IWeaponBehavior>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         ControlWeapon();
     }
 
+    void OnTriggerStay(Collider other)
+    {
+        if (other.transform.tag == null || other.transform.tag == "Untagged") return;
+
+        char thisPlayerNumber = gameObject.transform.parent.tag[6];
+        char colliderPlayerNumber = other.transform.tag[6];
+        
+        bool isOtherPlayerHit = thisPlayerNumber != colliderPlayerNumber;
+        if (isOtherPlayerHit && isPlayerFiring)
+        {
+            _weaponBehavior.PlayHitFx();
+        }
+    }
+
     void ControlWeapon()
     {
-        bool isPlayerFiring = gameObject.transform.parent.tag == "Player1"
+        isPlayerFiring = gameObject.transform.parent.tag == "Player1"
                             ? Input.GetButton("Fire_P1")
                             : Input.GetButton("Fire_P2");
         if (isPlayerFiring)

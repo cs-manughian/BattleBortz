@@ -6,4 +6,9 @@ public class ProjectileWeapon : MonoBehaviour, IWeaponBehavior
     {
         Debug.Log("Firing Projectile");
     }
+
+    public void PlayHitFx()
+    {
+        Debug.Log("Playing Hit Fx for Projectile");
+    }
 }
