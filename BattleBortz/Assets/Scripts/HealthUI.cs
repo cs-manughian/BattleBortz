@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class UIHealthUpdater : MonoBehaviour
+public class HealthUI : MonoBehaviour
 {
-    [SerializeField] Text _player1text;
-    [SerializeField] Text _player2text;
+    [SerializeField] Text _player1Text;
+    [SerializeField] Text _player2Text;
+    [SerializeField] Text _winText;
 
     // Start is called before the first frame update
     void Awake()
@@ -20,11 +21,19 @@ public class UIHealthUpdater : MonoBehaviour
 
     void UpdatePlayer1Health(int health)
     {
-        _player1text.text = string.Format("P1: {0}", health);
+        if (health == 0) DisplayWinScreen("Player 1");
+        _player1Text.text = string.Format("P1: {0}", health);
     }
 
     void UpdatePlayer2Health(int health)
     {
-        _player2text.text = string.Format("P2: {0}", health);
+        if (health == 0) DisplayWinScreen("Player 2");
+        _player2Text.text = string.Format("P2: {0}", health);
+    }
+
+    void DisplayWinScreen(string winner)
+    {
+        _winText.text = string.Format("{0} wins!", winner);
+        _winText.gameObject.SetActive(true);
     }
 }
