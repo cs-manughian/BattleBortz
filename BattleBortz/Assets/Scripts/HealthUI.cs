@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using UnityEngine.SceneManagement;
+using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HealthUI : MonoBehaviour
 {
     [SerializeField] Text _player1Text;
     [SerializeField] Text _player2Text;
-    [SerializeField] Text _winText;
+    [SerializeField] TextMeshProUGUI _winText;
 
     // Start is called before the first frame update
     void Awake()
@@ -21,13 +23,13 @@ public class HealthUI : MonoBehaviour
 
     void UpdatePlayer1Health(int health)
     {
-        if (health == 0) DisplayWinScreen("Player 1");
+        if (health == 0) DisplayWinScreen("Player 2");
         _player1Text.text = string.Format("P1: {0}", health);
     }
 
     void UpdatePlayer2Health(int health)
     {
-        if (health == 0) DisplayWinScreen("Player 2");
+        if (health == 0) DisplayWinScreen("Player 1");
         _player2Text.text = string.Format("P2: {0}", health);
     }
 
@@ -35,5 +37,11 @@ public class HealthUI : MonoBehaviour
     {
         _winText.text = string.Format("{0} wins!", winner);
         _winText.gameObject.SetActive(true);
+        Invoke("LoadMainMenu", 5f);
+    }
+
+    void LoadMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
