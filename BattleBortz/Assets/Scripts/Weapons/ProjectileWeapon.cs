@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ProjectileWeapon : MonoBehaviour, IWeaponBehavior
+public class ProjectileWeapon : BaseWeapon, IWeaponBehavior
 {
     public void Fire()
     {
@@ -10,5 +10,10 @@ public class ProjectileWeapon : MonoBehaviour, IWeaponBehavior
     public void PlayHitFx()
     {
         Debug.Log("Playing Hit Fx for Projectile");
+    }
+
+    public new void ApplyDamage(Collider bot)
+    {
+        base.ApplyDamage(bot);
     }
 }

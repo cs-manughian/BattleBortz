@@ -12,13 +12,9 @@ public class ScoreTracker : MonoBehaviour
         OnHealthChanged?.Invoke(health);
     }
 
-    void OnCollisionEnter(Collision collision)
+    public void UpdateHealth(int damage)
     {
-        bool collidedWithOtherPlayer = collision.gameObject.tag != gameObject.tag;
-        if (collidedWithOtherPlayer)
-        {
-            health -= 10;
-            OnHealthChanged?.Invoke(health);
-        }
+        health -= damage;
+        OnHealthChanged?.Invoke(health);
     }
 }

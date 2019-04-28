@@ -26,6 +26,7 @@ public class WeaponController : MonoBehaviour
         if (isOtherPlayerHit && isPlayerFiring)
         {
             _weaponBehavior.PlayHitFx();
+            _weaponBehavior.ApplyDamage(other);
         }
     }
 
