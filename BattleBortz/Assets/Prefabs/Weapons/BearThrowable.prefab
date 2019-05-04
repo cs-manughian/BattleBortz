@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 4410843128935598}
   - component: {fileID: 33258934878079496}
   - component: {fileID: 23477471634162096}
-  - component: {fileID: 60470232499435531}
-  - component: {fileID: 1715429828742852749}
+  - component: {fileID: 9092718538133840007}
+  - component: {fileID: 504963894462141526}
+  - component: {fileID: 8066484303899835343}
   m_Layer: 0
-  m_Name: Bear
+  m_Name: BearThrowable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +80,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &60470232499435531
+--- !u!54 &9092718538133840007
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258646480729192}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &504963894462141526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258646480729192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4691854, y: 1.8888118, z: 1.2306082}
+  m_Center: {x: -0.00000008940697, y: 0.4487621, z: 0.15734382}
+--- !u!114 &8066484303899835343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,21 +118,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258646480729192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e128670993e4884eaab5b51a23f5bd5, type: 3}
+  m_Script: {fileID: 11500000, guid: ff7b2baacdd541c4284f33c98410e8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1715429828742852749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258646480729192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0202638e168117d44b230acca70e4ee9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _riseSpeed: 10
-  _bearThrowable: {fileID: 1258646480729192, guid: 4ee9d68bf6bd2354c9a4f1f0d7134f7b,
-    type: 3}

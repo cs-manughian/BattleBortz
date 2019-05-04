@@ -1,19 +1,20 @@
 ﻿using UnityEngine;
 
-public class ThrowableWeapon : BaseWeapon, IWeaponBehavior
+public class ThrowableWeapon : MonoBehaviour
 {
-    public void Fire()
+    ThrowableWeaponSource _weaponSource;
+
+    void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Firing Throwable");
+        if (_weaponSource.IsOpponentHit(other.collider))
+        {
+            _weaponSource.PlayHitFx();
+            _weaponSource.ApplyDamage(other.collider);
+        }
     }
 
-    public void PlayHitFx()
+    public void AssignWeaponSourceInstance(ThrowableWeaponSource src)
     {
-        Debug.Log("Playing Hit Fx for Throwable");
-    }
-
-    public new void ApplyDamage(Collider bot)
-    {
-        base.ApplyDamage(bot);
+        _weaponSource = src;
     }
 }

@@ -3,7 +3,7 @@
 public class WeaponController : MonoBehaviour
 {
     IWeaponBehavior _weaponBehavior;
-    bool isPlayerFiring;
+    bool _isPlayerFiring;
 
     void Awake()
     {
@@ -23,7 +23,7 @@ public class WeaponController : MonoBehaviour
         char colliderPlayerNumber = other.transform.tag[6];
         
         bool isOtherPlayerHit = thisPlayerNumber != colliderPlayerNumber;
-        if (isOtherPlayerHit && isPlayerFiring)
+        if (isOtherPlayerHit && _isPlayerFiring)
         {
             _weaponBehavior.PlayHitFx();
             _weaponBehavior.ApplyDamage(other);
@@ -32,10 +32,10 @@ public class WeaponController : MonoBehaviour
 
     void ControlWeapon()
     {
-        isPlayerFiring = gameObject.transform.parent.tag == "Player1"
+        _isPlayerFiring = gameObject.transform.parent.tag == "Player1"
                             ? Input.GetButton("Fire_P1")
                             : Input.GetButton("Fire_P2");
-        if (isPlayerFiring)
+        if (_isPlayerFiring)
         {
             _weaponBehavior.Fire();
         }

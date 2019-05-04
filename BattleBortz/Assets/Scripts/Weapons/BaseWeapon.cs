@@ -19,4 +19,15 @@ public class BaseWeapon : MonoBehaviour
             lastDamageTime = Time.realtimeSinceStartup;
         }
     }
+
+    protected bool IsOpponentHit(GameObject me, Collider other)
+    {
+        if (other.transform.tag == null || other.transform.tag == "Untagged") return false;
+
+        char thisPlayerNumber = me.transform.parent.tag[6];
+        char colliderPlayerNumber = other.transform.tag[6];
+
+        bool isOtherPlayerHit = thisPlayerNumber != colliderPlayerNumber;
+        return isOtherPlayerHit;
+    }
 }
