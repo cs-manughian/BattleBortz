@@ -2,8 +2,8 @@
 
 public class BaseWeapon : MonoBehaviour
 { 
-    float lastDamageTime = 0;
-    float currentTime = 0;
+    float lastDamageTime = 0f;
+    float currentTime = 0f;
 
     protected void ApplyDamage(Collider bot)
     {

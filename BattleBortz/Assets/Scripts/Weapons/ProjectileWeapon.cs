@@ -1,19 +1,20 @@
 ﻿using UnityEngine;
 
-public class ProjectileWeapon : BaseWeapon, IWeaponBehavior
+public class ProjectileWeapon : MonoBehaviour
 {
-    public void Fire()
+    ProjectileWeaponSource _weaponSource; 
+
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Firing Projectile");
+        if (_weaponSource.IsOpponentHit(other))
+        {
+            _weaponSource.PlayHitFx();
+            _weaponSource.ApplyDamage(other);
+        }
     }
 
-    public void PlayHitFx()
+    public void AssignWeaponSourceInstance(ProjectileWeaponSource src)
     {
-        Debug.Log("Playing Hit Fx for Projectile");
-    }
-
-    public new void ApplyDamage(Collider bot)
-    {
-        base.ApplyDamage(bot);
+        _weaponSource = src;
     }
 }
