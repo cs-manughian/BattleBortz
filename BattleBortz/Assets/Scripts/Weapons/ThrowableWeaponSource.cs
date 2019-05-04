@@ -8,7 +8,6 @@ public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
     public void Fire()
     {
         Debug.Log("Firing Throwable");
-        InstantiateWeapon();
         ThrowWeapon();
     }
 
@@ -27,15 +26,17 @@ public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
         return base.IsOpponentHit(gameObject, other);
     }
 
-    void InstantiateWeapon()
+    GameObject InstantiateWeapon()
     {
         GameObject weapon = Instantiate(_bearThrowable);
         weapon.transform.position = gameObject.transform.position;
         weapon.GetComponent<ThrowableWeapon>().AssignWeaponSourceInstance(this);
+        return weapon;
     }
 
     void ThrowWeapon()
     {
-        _bearThrowable.GetComponent<Rigidbody>().velocity = Vector3.up * _riseSpeed;
+        GameObject weapon = InstantiateWeapon();
+        weapon.GetComponent<Rigidbody>().velocity = Vector3.up * _riseSpeed;
     }
 }
