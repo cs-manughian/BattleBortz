@@ -792,7 +792,7 @@ PrefabInstance:
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250.00005
+      value: 250.00006
       objectReference: {fileID: 0}
     - target: {fileID: 7021551620852558224, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
@@ -923,6 +923,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896689260878747771, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896689260878747771, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896689260878747771, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -1334,16 +1349,6 @@ PrefabInstance:
       propertyPath: _player
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1332623544671761787, guid: afc777a607bf97b4ab7d2b3707d35d35,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2180144151099837157, guid: afc777a607bf97b4ab7d2b3707d35d35,
-        type: 3}
-      propertyPath: m_Name
-      value: WeaponToggleController
-      objectReference: {fileID: 0}
     - target: {fileID: 785757331037529390, guid: afc777a607bf97b4ab7d2b3707d35d35,
         type: 3}
       propertyPath: m_IsActive
@@ -1373,6 +1378,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332623544671761787, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180144151099837157, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_Name
+      value: WeaponToggleController
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896689260878747771, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896689260878747771, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896689260878747771, guid: afc777a607bf97b4ab7d2b3707d35d35,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1332623544671761787, guid: afc777a607bf97b4ab7d2b3707d35d35, type: 3}
