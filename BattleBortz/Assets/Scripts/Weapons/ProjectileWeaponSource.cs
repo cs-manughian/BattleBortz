@@ -6,6 +6,8 @@ public class ProjectileWeaponSource : BaseWeapon, IWeaponBehavior
     [SerializeField] GameObject _projectileSpawnPoint;
     [SerializeField] float _projectileSpeed = 250.0f;
 
+    [SerializeField] ParticleSystem _fireFx;
+
     [SerializeField] float _fireRate = 0.25f;
     float _fireTime = 1.0f;
 
@@ -17,7 +19,7 @@ public class ProjectileWeaponSource : BaseWeapon, IWeaponBehavior
     public void Fire()
     {
         if (_fireTime < _fireRate) return;
-
+        
         _fireTime = 0.0f;
         GameObject projectile = Instantiate(_projectile);
         projectile.transform.position = _projectileSpawnPoint.transform.position;

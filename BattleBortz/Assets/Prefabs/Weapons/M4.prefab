@@ -82,6 +82,8 @@ MonoBehaviour:
   _projectile: {fileID: 5362704210719263856, guid: 6a0abd6107b78294da86ea85742824ac,
     type: 3}
   _projectileSpawnPoint: {fileID: 8930237942587099155}
+  _projectileSpeed: 25
+  _fireRate: 0.1
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
