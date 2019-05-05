@@ -2,11 +2,11 @@
 
 public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
 {
-    [SerializeField] float _riseSpeed = 5f;
+    [SerializeField] float _riseSpeed = 10f;
     [SerializeField] GameObject _bearThrowable;
 
-    [SerializeField] float _fireRate = 2f;
     float _fireTime = 1.0f;
+    float _fireRate = 1.0f;
 
     void Update()
     {

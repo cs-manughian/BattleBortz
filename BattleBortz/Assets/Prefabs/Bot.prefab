@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 5620977871272693259}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Player1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -462,7 +462,7 @@ Transform:
   m_GameObject: {fileID: 5578913195671366898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.019411, y: 3.0984, z: 0.27313}
-  m_LocalScale: {x: 1.7929797, y: 1.7929797, z: 1.7929797}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 1915256304725029364}
   - {fileID: 2071148003838834982}
@@ -479,8 +479,8 @@ Rigidbody:
   m_GameObject: {fileID: 5578913195671366898}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 1.05
-  m_AngularDrag: 0.3
+  m_Drag: 0.1
+  m_AngularDrag: 0.005
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -510,8 +510,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2fb8aa8411fbf40b908c7e50c51535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12000
-  rotationSpeed: 400
+  speed: 20
+  rotationSpeed: 5
 --- !u!114 &5939488061417907067
 MonoBehaviour:
   m_ObjectHideFlags: 0
