@@ -47,7 +47,7 @@ public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
     void ThrowWeapon()
     {
         GameObject weapon = InstantiateWeapon();
-        Vector3 force = Vector3.up * _riseSpeed;
+        Vector3 force = (Vector3.up + transform.forward) * _riseSpeed;
         weapon.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
     }
 }

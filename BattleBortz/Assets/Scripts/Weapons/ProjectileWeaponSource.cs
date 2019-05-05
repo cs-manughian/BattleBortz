@@ -19,7 +19,8 @@ public class ProjectileWeaponSource : BaseWeapon, IWeaponBehavior
     public void Fire()
     {
         if (_fireTime < _fireRate) return;
-        
+
+        _fireFx.Play();
         _fireTime = 0.0f;
         GameObject projectile = Instantiate(_projectile);
         projectile.transform.position = _projectileSpawnPoint.transform.position;
@@ -32,7 +33,7 @@ public class ProjectileWeaponSource : BaseWeapon, IWeaponBehavior
 
     public void PlayHitFx()
     {
-        Debug.Log("Playing Hit Fx for Projectile");
+        // TODO: Refactor for weapon source classes
     }
 
     public new void ApplyDamage(Collider bot)
