@@ -33,8 +33,8 @@ public class WeaponController : MonoBehaviour
     void ControlWeapon()
     {
         _isPlayerFiring = gameObject.transform.parent.tag == "Player1"
-                            ? Input.GetButton("Fire_P1")
-                            : Input.GetButton("Fire_P2");
+                        ? Input.GetButton("Fire_P1")
+                        : Input.GetButton("Fire_P2");
         if (_isPlayerFiring)
         {
             _weaponBehavior.Fire();

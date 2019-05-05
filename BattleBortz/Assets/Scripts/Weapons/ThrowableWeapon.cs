@@ -8,9 +8,15 @@ public class ThrowableWeapon : MonoBehaviour
     {
         if (_weaponSource.IsOpponentHit(other.collider))
         {
-            _weaponSource.PlayHitFx();
+            Explode();
             _weaponSource.ApplyDamage(other.collider);
         }
+    }
+
+    void Explode()
+    {
+        _weaponSource.PlayHitFx();
+        Destroy(gameObject);
     }
 
     public void AssignWeaponSourceInstance(ThrowableWeaponSource src)

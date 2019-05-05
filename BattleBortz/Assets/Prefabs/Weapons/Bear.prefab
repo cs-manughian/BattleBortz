@@ -106,3 +106,4 @@ MonoBehaviour:
   _riseSpeed: 10
   _bearThrowable: {fileID: 1258646480729192, guid: 4ee9d68bf6bd2354c9a4f1f0d7134f7b,
     type: 3}
+  _fireRate: 2

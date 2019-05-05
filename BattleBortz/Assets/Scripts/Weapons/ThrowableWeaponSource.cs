@@ -2,12 +2,22 @@
 
 public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
 {
-    [SerializeField] float _riseSpeed = 1f;
+    [SerializeField] float _riseSpeed = 5f;
     [SerializeField] GameObject _bearThrowable;
+
+    [SerializeField] float _fireRate = 2f;
+    float _fireTime = 1.0f;
+
+    void Update()
+    {
+        _fireTime += Time.deltaTime;
+    }
 
     public void Fire()
     {
-        Debug.Log("Firing Throwable");
+        if (_fireTime < _fireRate) return;
+        _fireTime = 0.0f;
+
         ThrowWeapon();
     }
 
@@ -37,6 +47,7 @@ public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
     void ThrowWeapon()
     {
         GameObject weapon = InstantiateWeapon();
-        weapon.GetComponent<Rigidbody>().velocity = Vector3.up * _riseSpeed;
+        Vector3 force = Vector3.up * _riseSpeed;
+        weapon.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
     }
 }
