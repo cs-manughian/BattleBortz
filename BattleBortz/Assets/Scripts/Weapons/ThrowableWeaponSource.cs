@@ -2,7 +2,7 @@
 
 public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
 {
-    [SerializeField] float _riseSpeed = 10f;
+    [SerializeField] float _riseSpeed = 5f;
     [SerializeField] GameObject _bearThrowable;
 
     float _fireTime = 1.0f;
@@ -23,7 +23,7 @@ public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
 
     public void PlayHitFx()
     {
-        Debug.Log("Playing Hit Fx for Throwable");
+        // TODO: Refactor for weapon source classes
     }
 
     public new void ApplyDamage(Collider bot)
@@ -47,7 +47,9 @@ public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
     void ThrowWeapon()
     {
         GameObject weapon = InstantiateWeapon();
-        Vector3 force = Vector3.up * _riseSpeed;
+        float forwardForceFactor = 0.25f;
+        float upForceFactor = 0.5f;
+        Vector3 force = (transform.forward * forwardForceFactor + Vector3.up * upForceFactor) * _riseSpeed;
         weapon.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
     }
 }
