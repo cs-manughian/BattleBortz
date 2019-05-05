@@ -2,7 +2,7 @@
 
 public class SpinnableWeapon : BaseWeapon, IWeaponBehavior
 {
-    [SerializeField] ParticleSystem sparks;
+    [SerializeField] ParticleSystem _sparks;
 
     public void Fire()
     {
@@ -18,7 +18,7 @@ public class SpinnableWeapon : BaseWeapon, IWeaponBehavior
 
     public void PlayHitFx()
     {
-        sparks.Play();
+        _sparks.Play();
     }
 
     public new void ApplyDamage(Collider bot)
