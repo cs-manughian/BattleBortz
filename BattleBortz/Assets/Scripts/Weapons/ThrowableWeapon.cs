@@ -5,14 +5,14 @@ public class ThrowableWeapon : MonoBehaviour
     [SerializeField] ParticleSystem _explosion;
     [SerializeField] AudioSource _soundFx;
     ThrowableWeaponSource _weaponSource;
-    bool _isFirstCollision = true;
+    bool _isFirstOpponentCollision = true;
 
     void OnCollisionEnter(Collision other)
     {
-        if (_weaponSource.IsOpponentHit(other.collider) && _isFirstCollision)
+        Explode();
+        if (_weaponSource.IsOpponentHit(other.collider) && _isFirstOpponentCollision)
         {
-            _isFirstCollision = false;
-            Explode();
+            _isFirstOpponentCollision = false;
             _weaponSource.ApplyDamage(other.collider);
         }
     }

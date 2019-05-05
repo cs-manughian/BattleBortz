@@ -39,7 +39,8 @@ public class ThrowableWeaponSource : BaseWeapon, IWeaponBehavior
     GameObject InstantiateWeapon()
     {
         GameObject weapon = Instantiate(_bearThrowable);
-        weapon.transform.position = gameObject.transform.position;
+        Vector3 spawnPos = Vector3.up * 0.25f;
+        weapon.transform.position = gameObject.transform.position + spawnPos;
         weapon.GetComponent<ThrowableWeapon>().AssignWeaponSourceInstance(this);
         return weapon;
     }
