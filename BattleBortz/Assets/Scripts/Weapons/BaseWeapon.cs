@@ -24,7 +24,7 @@ public class BaseWeapon : MonoBehaviour
     {
         if (other.transform.tag == null || other.transform.tag == "Untagged") return false;
 
-        char thisPlayerNumber = me.transform.parent.tag[6];
+        char thisPlayerNumber = me.tag[6];
         char colliderPlayerNumber = other.transform.tag[6];
 
         bool isOtherPlayerHit = thisPlayerNumber != colliderPlayerNumber;
