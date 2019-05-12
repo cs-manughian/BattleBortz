@@ -4,6 +4,7 @@ public class WeaponController : MonoBehaviour
 {
     IWeaponBehavior _weaponBehavior;
     bool _isPlayerFiring;
+    string controlWeaponButton;
 
     void Awake()
     {
@@ -19,7 +20,7 @@ public class WeaponController : MonoBehaviour
     {
         if (other.transform.tag == null || other.transform.tag == "Untagged") return;
 
-        char thisPlayerNumber = gameObject.transform.parent.tag[6];
+        char thisPlayerNumber = gameObject.tag[6];
         char colliderPlayerNumber = other.transform.tag[6];
         
         bool isOtherPlayerHit = thisPlayerNumber != colliderPlayerNumber;
@@ -32,12 +33,21 @@ public class WeaponController : MonoBehaviour
 
     void ControlWeapon()
     {
-        _isPlayerFiring = gameObject.transform.parent.tag == "Player1"
-                        ? Input.GetButton("Fire_P1")
-                        : Input.GetButton("Fire_P2");
+        if (string.IsNullOrEmpty(controlWeaponButton)) 
+            return;
+
+        _isPlayerFiring = Input.GetButton(controlWeaponButton);
         if (_isPlayerFiring)
         {
             _weaponBehavior.Fire();
         }
+    }
+
+    public void AssignControlWeaponButton(string tag)
+    {
+        gameObject.tag = tag;
+        controlWeaponButton = tag == "Player1"
+                                    ? "Fire_P1"
+                                    : "Fire_P2";
     }
 }

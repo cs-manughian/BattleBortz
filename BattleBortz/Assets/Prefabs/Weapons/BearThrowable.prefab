@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9092718538133840007}
   - component: {fileID: 504963894462141526}
   - component: {fileID: 8066484303899835343}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearThrowable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,9 +131,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4410843128935598}
     m_Modifications:
-    - target: {fileID: 100000, guid: d45bcc54cd0ed5948841f7e488ebc9eb, type: 3}
-      propertyPath: m_Name
-      value: Flame Burst Throwable
+    - target: {fileID: 8200000, guid: d45bcc54cd0ed5948841f7e488ebc9eb, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d45bcc54cd0ed5948841f7e488ebc9eb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -191,9 +191,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8200000, guid: d45bcc54cd0ed5948841f7e488ebc9eb, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
+    - target: {fileID: 100000, guid: d45bcc54cd0ed5948841f7e488ebc9eb, type: 3}
+      propertyPath: m_Name
+      value: Flame Burst Throwable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d45bcc54cd0ed5948841f7e488ebc9eb, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6902767710036697744, guid: d45bcc54cd0ed5948841f7e488ebc9eb,
         type: 3}

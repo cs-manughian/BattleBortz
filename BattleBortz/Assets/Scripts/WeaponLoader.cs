@@ -60,5 +60,7 @@ public class WeaponLoader : MonoBehaviour
     {
         GameObject weapon = Instantiate(weaponRef);
         weapon.transform.SetParent(_weaponBone.transform, worldPositionStays:false);
+
+        weapon.GetComponent<WeaponController>().AssignControlWeaponButton(gameObject.tag);
     }
 }
