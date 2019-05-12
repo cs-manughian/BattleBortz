@@ -7,6 +7,7 @@ TagManager:
   - Player1
   - Player2
   - Enemy
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - 
   - PostProcessing
   - Weapon
-  - 
+  - FireLayer
   - 
   - 
   - 
