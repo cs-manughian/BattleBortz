@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using GameUtils;
 
-public class WeaponToggleActivator : MonoBehaviour
+public class WeaponButtonActivator : MonoBehaviour
 {
     public WeaponType _weaponType;
     public int _player;
@@ -10,39 +10,35 @@ public class WeaponToggleActivator : MonoBehaviour
     [SerializeField] GameObject _gunObject;
     [SerializeField] GameObject _teddyObject;
 
-    private Toggle _toggle;
-    private Color _baseColor;
-    private Color _selectedColor;
     private GameObject _weaponObject;
+
+    [SerializeField] Color _baseColor;
+    [SerializeField] Color _selectedColor;
+
+    bool _isSelected = false;
+    Image _image;
 
     // Start is called before the first frame update
     void Start()
     {
-        _toggle = GetComponent<Toggle>();
-        _toggle.onValueChanged.AddListener((value) => OnToggleValueChanged(value));
-
-        _baseColor = _toggle.colors.normalColor;
-        _selectedColor = _toggle.colors.highlightedColor;
-
         SetToggleWeaponObject();
+
+        _image = GetComponent<Image>();
     }
 
     // Update is called once per frame
     void Update()
     {
         RotateWeapon();
+
+        // Update color because screw Unity
+        if (_isSelected) _image.color = _selectedColor;
+        else _image.color = _baseColor;
     }
 
-    void OnToggleValueChanged(bool value)
+    public void SelectButton(bool value)
     {
-        if (value)
-        {
-            GetComponent<Image>().color = _selectedColor;
-        }
-        else
-        {
-            GetComponent<Image>().color = _baseColor;
-        }
+        _isSelected = value;
     }
 
     void SetToggleWeaponObject()
