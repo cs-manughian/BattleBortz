@@ -15,7 +15,6 @@ public class WeaponButtonActivator : MonoBehaviour
     [SerializeField] Color _baseColor;
     [SerializeField] Color _selectedColor;
 
-    bool _isSelected = false;
     Image _image;
 
     // Start is called before the first frame update
@@ -30,15 +29,12 @@ public class WeaponButtonActivator : MonoBehaviour
     void Update()
     {
         RotateWeapon();
-
-        // Update color because screw Unity
-        if (_isSelected) _image.color = _selectedColor;
-        else _image.color = _baseColor;
     }
 
     public void SelectButton(bool value)
     {
-        _isSelected = value;
+        if (value) _image.color = _selectedColor;
+        else _image.color = _baseColor;
     }
 
     void SetToggleWeaponObject()
