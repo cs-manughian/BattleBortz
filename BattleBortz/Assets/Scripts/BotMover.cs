@@ -26,7 +26,7 @@ public class BotMover : MonoBehaviour
         Vector3 translation = verticalAxis * velocity;
         Vector3 rotation    = horizontalAxis * rotationSpeed * Vector3.up;
         
-        _rigidbody.AddRelativeForce(translation, ForceMode.Force);
+        _rigidbody.AddRelativeForce(translation, ForceMode.VelocityChange);
         _rigidbody.AddRelativeTorque(rotation, ForceMode.VelocityChange);
     }
 }
